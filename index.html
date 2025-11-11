@@ -67,21 +67,22 @@
           document.write("<center>");
           var hari = new Date();
           var jam = hari.getHours();
+          
           if (jam >= 0 && jam < 12) {
             document.write(
               "<h1 class='ucapan'>Selamat Pagi Sayang!</h1><p class='isiucapan'>Saat aku membuka mata setiap harinya, yang ingin aku lihat hanya kamu. i love you sayang <3<p>"
             );
-          } else if (jam == 12) {
+          } else if (jam >= 12 && jam < 15) {
             document.write(
-              "<h1 class='ucapan'>Selamat Siang Sayang!</h1><p class='isiucapan'>Jangan Lupa Makan Yaa Sayang. i love you sayang <3<p>"
+              "<h1 class='ucapan'>Selamat Siang Sayang!</h1><p class='isiucapan'>Jangan lupa makan siang ya sayang, semoga harimu menyenangkan. i love you sayang <3<p>"
             );
-          } else if (jam >= 12 && jam <= 17) {
+          } else if (jam >= 15 && jam < 18) {
             document.write(
-              "<h1 class='ucapan'>Selamat Siang Menjelang Sore Sayang!</h1><p class='isiucapan'>Jangan Lupa Mandi + Jam demi jam telah kamu lalui dengan baik, persiapkan diri kamu untuk aktifitas yang akan datang ya sayang. i love you sayang <3<p>"
+              "<h1 class='ucapan'>Selamat Sore Menjelang Malam Sayang!</h1><p class='isiucapan'>Matahari mulai terbenam, semoga soremu seindah senyummu. Jangan lupa istirahat sebentar ya. i love you sayang <3<p>"
             );
-          } else {
+          } else if (jam >= 18 && jam < 24) {
             document.write(
-              "<h1 class='ucapan'>Selamat Malam Sayang!</h1><p class='isiucapan'>Setelah seharian beraktifitas, kini telah tiba saatnya untuk beristirahat, rebahkan dirimu di kasur kesayanganmu. kabari aku disetiap kegiatanmu. i love you sayang <3<p>"
+              "<h1 class='ucapan'>Selamat Malam Sayang!</h1><p class='isiucapan'>Setelah seharian beraktifitas, kini saatnya kamu rebahan dan tenangkan pikiranmu. i love you sayang <3<p>"
             );
           }
           document.write("</center>");
